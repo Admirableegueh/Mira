@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investormatch</title>
+    <link rel="stylesheet" href="page3.css">
+</head>
+<body>
+    <header>
+        <h1> INVESTORMATCH</h1>
+        <nav>
+            <ul>
+                <li><a href="Page7.html">Inscription</a></li>
+                <li><a href="Page6.html">Connexion</a></li>
+                <li><a href="Page1.html">Comment ça marche ?</a></li>
+                <li><a href="class.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav>
+        <main></main>
+        <ul>
+            <li><a href="Page3.html">Projet à financer</a></li>
+            <li><a href="Page9.html">Appel  À Projet  </a></li>
+            <li><a href="Page10.html">Indicateurs d'analyse de projet</a></li>
+            <li><a href="Page11.html">Projets Clôturés</a></li>
+            <li><a href="Page8.html">Contacts</a></li>
+        </ul>
+    </nav>
+    
+        
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Découverte de projets innovants</h1>
+        </div>
+    </section>
+    <section class="projects">
+        <h1>PROJETS À FINANCER</h1>
+        <div id="project-container"></div>
+        <form id="project-form">
+            <h2>Ajouter un projet</h2>
+            <input type="text" id="investor-name" placeholder="Nom de l'investisseur" required>
+            <input type="text" id="project-title" placeholder="Titre du projet" required>
+            <textarea id="project-description" placeholder="Description du projet" required></textarea>
+            <input type="text" id="project-cost" placeholder="Coût du projet" required>
+            <input type="text" id="expected-investment" placeholder="Investissement attendu" required>
+            <input type="text" id="personal-investment" placeholder="Investissement personnel" required>
+            <input type="date" id="deadline" placeholder="Délai (date limite)" required>
+            <button type="submit">Ajouter</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

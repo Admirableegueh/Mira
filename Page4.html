@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Porteur de Projets</title>
+    <link rel="stylesheet" href="page4.css">
+</head>
+<body>
+    <section class="signup-form">
+        <h1>INSCRIPTION PORTEUR DE PROJETS</h1>
+        <p>Renseignez les informations</p>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                </div>
+                <div>
+                    <label for="prenom">Prenom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prenom" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="sexe">Sexe</label>
+                    <select id="sexe" name="sexe" required>
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="annee-naissance">Année de naissance</label>
+                    <input type="text" id="annee-naissance" name="annee-naissance" placeholder="Année de naissance" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="activite">Activité du porteur du projet</label>
+                    <input type="text" id="activite" name="activite" placeholder="Activité" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="telephone">Téléphone</label>
+                    <input type="text" id="telephone" name="telephone" placeholder="Téléphone" required>
+                </div>
+                <div>
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="image-profil">Image de profil</label>
+                    <input type="file" id="image-profil" name="image-profil" accept="image/*">
+                </div>
+                <div>
+                    <label for="description">Description du porteur de projet</label>
+                    <input type="text" id="description" name="description" placeholder="Description du porteur de projet" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="mot-de-passe">Mot de passe</label>
+                    <input type="password" id="mot-de-passe" name="mot-de-passe" placeholder="Mot de passe" required>
+                </div>
+                <div>
+                    <label for="confirmation">Confirmation</label>
+                    <input type="password" id="confirmation" name="confirmation" placeholder="Confirmation" required>
+                </div>
+            </div>
+            <button type="submit">Valider</button>
+        </form>
+    </section>
+</body>
+</html>

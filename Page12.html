@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Financements</title>
+    <link rel="stylesheet" href="page12.css">
+</head>
+<body>
+    <table class="funding-table">
+        <thead>
+            <tr>
+                <th>Noms</th>
+                <th>Les types de financements</th>
+                <th>Entreprises éligibles</th>
+                <th>Liens utiles</th>
+            </tr>
+        </thead>
+        <tbody id="funding-rows">
+            <tr>
+                <td><input type="text" placeholder="Nom"></td>
+                <td><input type="text" placeholder="Type de financement"></td>
+                <td><input type="text" placeholder="Entreprises éligibles"></td>
+                <td><button class="info-button">Plus d'informations</button></td>
+            </tr>
+            <!-- Plus de lignes peuvent être ajoutées ici -->
+        </tbody>
+    </table>
+    <button onclick="addRow()">Ajouter une ligne</button>
+
+    <script>
+        function addRow() {
+            const table = document.getElementById('funding-rows');
+            const newRow = document.createElement('tr');
+
+            newRow.innerHTML = `
+                <td><input type="text" placeholder="Nom"></td>
+                <td><input type="text" placeholder="Type de financement"></td>
+                <td><input type="text" placeholder="Entreprises éligibles"></td>
+                <td><button class="info-button">Plus d'informations</button></td>
+            `;
+
+            table.appendChild(newRow);
+        }
+    </script>
+</body>
+</html>
